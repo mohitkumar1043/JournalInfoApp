@@ -8,7 +8,8 @@ This project is a **Journal Information System** that enables users to securely 
 - User Login with Basic Authentication
 - Secure Journal Entry Creation
 - User-specific journal management
-- Integration with MongoDB as a database
+- Stateless REST API
+- handling of requests with MongoDB as a database
 - REST API design following Spring Boot standards
 
 ## Technologies Used
@@ -21,4 +22,21 @@ This project is a **Journal Information System** that enables users to securely 
 - **Maven** for dependency management
 
 ## Project Structure
+src
+│
+├───main
+│   ├───java
+│   │   └───com
+│   │       └───example
+│   │           └───journal
+│   │               ├───config        # Spring Security configuration
+│   │               ├───controller    # REST API controllers
+│   │               ├───model         # User and Journal Entry models
+│   │               ├───repository    # MongoDB repositories
+│   │               └───service       # Business logic and services
+│   └───resources
+│       ├───application.properties    # Application configuration
+│       └───static                    # Static resources (if applicable)
+├───test                              # Unit and integration tests
+└───pom.xml                           # Maven dependencies and plugins
 
