@@ -27,11 +27,11 @@ src
 ├───main
 │   ├───java
 │   │   └───com
-│   │       └───example
-│   │           └───journal
+│   │       └───mohit
+│   │           └───journalApp
 │   │               ├───config        # Spring Security configuration
 │   │               ├───controller    # REST API controllers
-│   │               ├───model         # User and Journal Entry models
+│   │               ├───entity       # User and Journal Entry entity
 │   │               ├───repository    # MongoDB repositories
 │   │               └───service       # Business logic and services
 │   └───resources
